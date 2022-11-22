@@ -25,10 +25,10 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
-header{
+header {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -37,9 +37,10 @@ header{
     min-width: 320px;
     height: 334px;
     text-align: center;
+    background: linear-gradient(207.8deg, var(--black) 16.69%, var(--bitcoin-orange) 100%);
 }
 
-header img{
+header img {
     width: 150px;
     height: 34px;
     margin-top: 60px;
@@ -54,4 +55,19 @@ header img{
     margin-top: 40px;
     text-align: center;
     align-self: center;
+}
+
+.header--tittle-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--tittle-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
 }
