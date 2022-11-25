@@ -14,6 +14,7 @@
     --warm-black: #282623;
     --black: #201e1c;
     --grey: #bababa;
+    --light-grey: #757575;
     --off-white: #faf8f7;
     --just-white: #fff;
     /* Elevation */
@@ -28,6 +29,7 @@
 html {
     font-size: 62.5%;
     font-family: "DM Sans", sans-serif;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -147,7 +149,7 @@ main {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.6rem;
-    color: #757575;
+    color: var(--light-grey);
 }
 
 .main--currency-table {
@@ -214,7 +216,7 @@ main {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
-    color: #757575;
+    color: var(--light-grey);
 }
 .main--currency-table-container .main-table-icon {
     display: inline-block;
@@ -348,7 +350,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('./assets/img/bitcoinbaby2x.jpg');
+    background-image: url("./assets/img/bitcoinbaby2x.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -360,4 +362,128 @@ main {
     line-height: 2.6rem;
     color: var(--just-white);
     text-align: center;
+}
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.main-plans-container .plans-tittle {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.main-plans-container .plans-tittle h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-plans-container .plans-tittle p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--light-grey);
+}
+
+.plans-container--slider{
+    display: flex;
+    gap: 15px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans-container--card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, .16);
+}
+
+.plan-type{
+    --font-size-p: 1.2rem;
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: 50%;
+    padding: calc(var(--font-size-p) / 2);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: var(--font-size-p);
+    border-radius: 8px;
+    color: var(--just-white);
+    
+}
+.plan-type__simple{
+    background-color: var(--secondary-blue);
+}
+.plan-type__recommended{
+    background-color: var(--bitcoin-orange);
+}
+.plan-type__family{
+    background-color: var(--warm-black);
+}
+.plan--card-tittle{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan--card-price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+}
+.plan--card-price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 2.45rem;
+}
+
+.plan--card-saving{
+    font-size: 1.2rem;
+    color: var(--light-grey);
+}
+
+.plan--card-call-to-action{
+    width: 150px;    
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.plan--card-call-to-action span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('./assets/icons/orange-right-arrow.svg');
+    vertical-align: text-bottom;
 }
