@@ -395,7 +395,7 @@ main {
     color: var(--light-grey);
 }
 
-.plans-container--slider{
+.plans-container--slider {
     display: flex;
     gap: 15px;
     height: 316px;
@@ -404,7 +404,7 @@ main {
     scroll-snap-type: x proximity;
 }
 
-.plans-container--card{
+.plans-container--card {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
@@ -415,10 +415,10 @@ main {
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, .16);
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.plan-type{
+.plan-type {
     --font-size-p: 1.2rem;
     position: absolute;
     width: 120px;
@@ -429,18 +429,17 @@ main {
     font-size: var(--font-size-p);
     border-radius: 8px;
     color: var(--just-white);
-    
 }
-.plan-type__simple{
+.plan-type__simple {
     background-color: var(--secondary-blue);
 }
-.plan-type__recommended{
+.plan-type__recommended {
     background-color: var(--bitcoin-orange);
 }
-.plan-type__family{
+.plan-type__family {
     background-color: var(--warm-black);
 }
-.plan--card-tittle{
+.plan--card-tittle {
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -448,26 +447,26 @@ main {
     color: var(--black);
 }
 
-.plan--card-price{
+.plan--card-price {
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 5.3rem;
     color: var(--black);
 }
-.plan--card-price span{
+.plan--card-price span {
     font-size: 1.2rem;
     font-weight: 300;
     vertical-align: 2.45rem;
 }
 
-.plan--card-saving{
+.plan--card-saving {
     font-size: 1.2rem;
     color: var(--light-grey);
 }
 
-.plan--card-call-to-action{
-    width: 150px;    
+.plan--card-call-to-action {
+    width: 150px;
     height: 48px;
     margin-top: 20px;
     background-color: var(--off-white);
@@ -480,10 +479,39 @@ main {
     color: var(--black);
 }
 
-.plan--card-call-to-action span{
+.plan--card-call-to-action span {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('./assets/icons/orange-right-arrow.svg');
+    background-image: url("./assets/icons/orange-right-arrow.svg");
     vertical-align: text-bottom;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+footer .left li {
+    margin: 10px 0;
+}
+footer .left a {
+    text-decoration: none;
+    color: var(--just-white);
 }
